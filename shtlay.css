@@ -1,0 +1,129 @@
+body {
+  font-family:'Tahoma', 'Helvetica', sans-serif;
+  font-size:20px;
+}
+
+body .content {
+  font-family:'Georgia', 'Times New Roman', serif;
+}
+
+nav {
+  background:rgba(40,40,40,0.95);
+  border-bottom:1px solid rgba(255,255,255,0.25);
+}
+
+nav .navbar-brand {
+  color:rgba(255,255,255,0.9);
+}
+
+nav .navbar-brand:hover {
+  color:rgba(255,255,255,0.5);
+}
+
+nav .navbar-nav>li.nav-item>a {
+  color:rgba(255,255,255,0.9);
+  font-size:11px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+@media only screen and (min-width: 992px) {
+  nav .navbar-nav>li.nav-item>a:hover {
+    color:rgba(255,255,255,0.5);
+  }
+}
+
+header {
+  margin-bottom:50px;
+  color:white;
+  font-size:25px;
+  background-attachment:scroll;
+  background-color:rgba(40,40,40,1);
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+header .heading {
+  padding:100px 0 75px;
+  text-align:center;
+}
+
+header .subheading {
+  color:rgb(255,255,255,0.5);
+  text-align:center;
+}
+
+footer {
+  position:relative;
+  margin-top:50px;
+  padding:15px 0 0;
+  font-size:15px;
+  text-align: center;
+  background-image: linear-gradient(rgba(40,40,40,1),rgba(30,30,30,0.75),rgba(0,0,0,0)); 
+}
+
+footer a {
+  color:rgba(255,255,255,0.9);
+}
+
+footer a:hover {
+  color:rgba(255,255,255,0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height:1.5;
+}
+
+p {
+  margin:20px 0;
+  line-height:1.5;
+}
+
+a {
+  color:rgba(0,0,0,0.5);
+  text-decoration:none;
+}
+
+a:hover {
+  color:#2080B0;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid rgba(40,40,40,1);
+}
+
+tr:nth-child(even) {
+  background: rgba(200,200,200,0.25);
+}
+
+::-moz-selection {
+  color:white;
+  text-shadow:none;
+  background:#2080B0;
+}
+
+::selection {
+  color:white;
+  text-shadow:none;
+  background:#2080B0;
+}
+
+img::-moz-selection {
+  color:white;
+  background:transparent;
+}
+
+img::selection {
+  color:white;
+  background:transparent;
+}
