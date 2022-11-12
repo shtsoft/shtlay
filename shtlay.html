@@ -6,17 +6,17 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DESCRIPTION">
+    <meta name="description" content="{{ page.description }}">
  
     <title>
-      TITLE
+      {{ page.title }}
     </title>
 
-    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./sht.css">
-    <link rel="canonical" href="CANONICAL">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/shtlay.css">
+    <link rel="canonical" href="{{ page.canonical }}">
 
   </head>
 
@@ -26,15 +26,17 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="BRANDLINK">
-          BRAND
+        <a class="navbar-brand" href="{{ page.brandlink }}">
+          {{ page.brand }}
         </a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-NAVITEMS
+{% if page.navitems %}
+  {% include {{ page.navitems }} %}
+{% endif %}
           </ul>
         </div>
       </div>
@@ -47,10 +49,10 @@ NAVITEMS
             <div class="col-lg-8 col-md-10 mx-auto">
               <div class="heading">
                 <h1>
-                  HEADING
+                  {{ page.heading }}
                 </h1>
                 <span class="subheading">
-                  SUBHEADING
+                  {{ page.subheading }}
                 </span>
               </div>
             </div>
@@ -63,7 +65,7 @@ NAVITEMS
     <div class="container content">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-CONTENT
+{{ content }}
         </div>
       </div>
     </div>
@@ -76,7 +78,9 @@ CONTENT
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline">
-FOOTERITEMS
+{% if page.footeritems %}
+  {% include {{ page.footeritems }} %}
+{% endif %}
             </ul>
           </div>
         </div>

@@ -5,4 +5,4 @@
 [license-badge]: https://img.shields.io/badge/license-GPL-blue.svg
 [license-url]: ./LICENSE
 
-A website-layout based on [bootstrap](https://github.com/twbs/bootstrap).
+A website-layout for [jekyll](https://github.com/jekyll/jekyll) based on [bootstrap](https://github.com/twbs/bootstrap).

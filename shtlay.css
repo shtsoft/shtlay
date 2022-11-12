@@ -127,3 +127,15 @@ img::selection {
   color:white;
   background:transparent;
 }
+
+#news {
+  text-transform:uppercase;
+}
+
+.post-heading {
+  font-family:'Tahoma', 'Helvetica', sans-serif;
+}
+
+.post-metadata {
+  font-size:13px;
+}
