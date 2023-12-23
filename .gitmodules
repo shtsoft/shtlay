@@ -1,6 +1,3 @@
-[submodule "bootstrap"]
-	path = bootstrap
-	url = https://github.com/twbs/bootstrap
 [submodule "jekyll-pygments-themes"]
 	path = jekyll-pygments-themes
 	url = https://github.com/jwarby/jekyll-pygments-themes
