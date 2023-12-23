@@ -1,0 +1,19 @@
+{
+  "name": "shtlay",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=21.2.0 <22",
+    "npm": ">=10.2.4 <11"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": ">=9.5.1 <10",
+    "webpack": ">=5.89.0 <6",
+    "webpack-cli": ">=5.1.4 <6"
+  },
+  "scripts": {
+    "build": "python bin/prepare_dist.py && webpack",
+    "lint": "tsc --noEmit",
+    "serve": "python -m http.server --directory dist --protocol HTTP/1.1 --bind 127.0.0.1 8080"
+  }
+}
