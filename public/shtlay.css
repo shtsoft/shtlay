@@ -11,7 +11,7 @@
 /* || Base */
 
 body {
-  font-family: 'Tahoma', 'Helvetica', sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
 }
 
@@ -26,18 +26,33 @@ p {
 
 blockquote {
   display: block;
-  border-left: 5px solid var(--shtdark);
   padding-left: 10px;
+  border-left: 5px solid var(--shtdark);
+}
+
+ul, ol, dl {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li, dt, dd {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bolder;
 }
 
 table {
   border: 5px ridge;
-  width: 100%;
 }
 
 thead {
-  color: white;
   background: var(--shtdark);
+  color: white;
 }
 
 td, th {
@@ -49,8 +64,8 @@ tr:hover {
 }
 
 a {
-  color: rgba(0,0,0,0.5);
   text-decoration: none;
+  color: rgba(0,0,0,0.5);
 }
 
 a:hover {
@@ -58,25 +73,63 @@ a:hover {
 }
 
 ::-moz-selection {
+  background: var(--shtselect);
   text-shadow: none;
   color: white;
-  background: var(--shtselect);
 }
 
 ::selection {
+  background: var(--shtselect);
   text-shadow: none;
   color: white;
-  background: var(--shtselect);
 }
 
 img::-moz-selection {
-  color: white;
   background: transparent;
+  color: white;
 }
 
 img::selection {
-  color: white;
   background: transparent;
+  color: white;
+}
+
+details {
+  margin: 10px;
+  padding: 2px 10px;
+  font-size: 1.2rem;
+  color: var(--shtdark);
+}
+
+summary {
+  cursor: pointer;
+  list-style-type: "\25bb";
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 25%;
+  border-radius: 5px;
+  background-image: radial-gradient(white, var(--shtdark));
+  box-shadow: 0px -3px 3px var(--shtdark);
+  font-weight: bolder;
+}
+
+details > p {
+  margin: 0;
+  padding-left: 3%;
+  padding-right: 25%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-image: linear-gradient(90deg, white, var(--shtdark));
+}
+
+details[open] > summary {
+  list-style-type: "\25bc";
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image: linear-gradient(90deg, white, var(--shtdark));
 }
 
 /* || Utility */
@@ -117,8 +170,6 @@ nav .navbar-nav>li.nav-item>a {
 
 header {
   margin-bottom: 50px;
-  font-size: 25px;
-  color: white;
   background-attachment: scroll;
   background-color: var(--shtdark);
   -webkit-background-size: cover;
@@ -127,6 +178,8 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 25px;
+  color: white;
 }
 
 header .heading {
@@ -143,9 +196,9 @@ footer {
   position: relative;
   margin-top: 50px;
   padding: 15px 0 0;
+  background-image: linear-gradient(var(--shtdark),rgba(0,0,0,0)); 
   text-align: center;
   font-size: 15px;
-  background-image: linear-gradient(var(--shtdark),rgba(0,0,0,0)); 
 }
 
 footer a {
@@ -159,8 +212,11 @@ footer a:hover {
 /* || Code */
 
 pre.highlight {
+  overflow: auto;
   padding: 5px 10px;
   background: var(--shtdark);
+  font-size: 13px;
+  color: white;
 }
 
 /* || FAQ */
