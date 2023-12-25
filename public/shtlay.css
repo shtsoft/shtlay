@@ -72,20 +72,9 @@ a:hover {
   color: var(--shtselect);
 }
 
-::-moz-selection {
-  background: var(--shtselect);
-  text-shadow: none;
-  color: white;
-}
-
 ::selection {
   background: var(--shtselect);
   text-shadow: none;
-  color: white;
-}
-
-img::-moz-selection {
-  background: transparent;
   color: white;
 }
 
@@ -172,9 +161,6 @@ header {
   margin-bottom: 50px;
   background-attachment: scroll;
   background-color: var(--shtdark);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
