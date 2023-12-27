@@ -55,7 +55,7 @@ table {
 }
 
 thead {
-  background: var(--shtdark);
+  background-color: var(--shtdark);
   color: white;
   font-size: 1.2rem;
 }
@@ -65,7 +65,7 @@ td, th {
 }
 
 tr:hover {
-  background: var(--shtdarksemi);
+  background-color: var(--shtdarksemi);
 }
 
 a {
@@ -78,13 +78,13 @@ a:hover {
 }
 
 ::selection {
-  background: var(--shtselect);
+  background-color: var(--shtselect);
   text-shadow: none;
   color: white;
 }
 
 img::selection {
-  background: transparent;
+  background-color: transparent;
   color: white;
 }
 
@@ -97,10 +97,7 @@ details {
 summary {
   cursor: pointer;
   list-style-type: "\25bb";
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 25%;
+  padding: 0.75rem 25% 0.75rem 1rem;
   border-radius: 5px;
   background-image: radial-gradient(white, var(--shtdark));
   box-shadow: 0px -5px 5px var(--shtdark);
@@ -112,10 +109,7 @@ details > p {
   margin: 0;
   padding-left: 1rem;
   padding-right: 25%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 0 0 5px 5px;
   background-image: linear-gradient(90deg, white, var(--shtdark));
   font-size: 1rem;
 }
@@ -139,7 +133,7 @@ details[open] > summary {
 
 nav {
   border-bottom: 1px solid var(--shtlightsemi);
-  background: var(--shtdarkless);
+  background-color: var(--shtdarkless);
 }
 
 nav .navbar-brand {
@@ -206,7 +200,7 @@ footer a:hover {
 pre.highlight {
   overflow: auto;
   padding: 0.25rem 0.5rem;
-  background: var(--shtdark);
+  background-color: var(--shtdark);
   font-size: 0.8rem;
   color: white;
 }
