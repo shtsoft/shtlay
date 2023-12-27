@@ -1,11 +1,12 @@
 :root {
-  --shtdark: rgba(40,40,40,1);
-  --shtdarkless: rgba(40,40,40,0.9);
-  --shtdarksemi: rgba(40,40,40,0.5);
-  --shtlight: rgba(255,255,255,1);
-  --shtlightless: rgba(255,255,255,0.9);
-  --shtlightsemi: rgba(255,255,255,0.5);
-  --shtselect: #2080B0;
+  --shtdark: rgba(40, 40, 40, 1);
+  --shtdarkless: rgba(40, 40, 40, 0.9);
+  --shtdarksemi: rgba(40, 40, 40, 0.5);
+  --shtlight: rgba(255, 255, 255, 1);
+  --shtlightless: rgba(255, 255, 255, 0.9);
+  --shtlightsemi: rgba(255, 255, 255, 0.5);
+  --shtanchor: rgba(0, 0, 0, 0.5);
+  --shtselect: rgba(32, 128, 176, 1);
 }
 
 /* || Base */
@@ -69,7 +70,7 @@ tr:hover {
 
 a {
   text-decoration: none;
-  color: rgba(0,0,0,0.5);
+  color: var(--shtanchor);
 }
 
 a:hover {
@@ -187,7 +188,7 @@ footer {
   position: relative;
   margin-top: 2.5rem;
   padding: 0.75rem 0 0;
-  background-image: linear-gradient(var(--shtdark),rgba(0,0,0,0)); 
+  background-image: linear-gradient(var(--shtdark), white); 
   text-align: center;
 }
 
