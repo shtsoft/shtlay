@@ -51,7 +51,7 @@ dt {
 }
 
 table {
-  border: 5px ridge;
+  border: 5px ridge var(--shtdark);
 }
 
 thead {
