@@ -9,6 +9,7 @@
   --shtlightsemi: rgba(255, 255, 255, 0.5);
   --shtanchor: rgba(0, 0, 0, 0.5);
   --shtselect: rgba(32, 128, 176, 1);
+  --lineheight: 1.5;
 }
 
 /* || Base */
@@ -23,11 +24,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5;
+  line-height: var(--lineheight);
 }
 
 p {
-  line-height: 1.5;
+  line-height: var(--lineheight);
 }
 
 blockquote {
@@ -44,7 +45,7 @@ ul {
 }
 
 li, dt, dd {
-  line-height: 1.5;
+  line-height: var(--lineheight);
 }
 
 dt {
