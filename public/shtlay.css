@@ -1,3 +1,5 @@
+@import url(syntax.css) layer(syntax);
+
 :root {
   --shtdark: rgba(40, 40, 40, 1);
   --shtdarkless: rgba(40, 40, 40, 0.9);
