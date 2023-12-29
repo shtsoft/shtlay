@@ -31,7 +31,6 @@ p {
 }
 
 blockquote {
-  display: block;
   padding-left: 1rem;
   border-left: 0.25rem solid var(--shtdark);
 }
