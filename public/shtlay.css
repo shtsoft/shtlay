@@ -131,32 +131,47 @@ details[open] > summary {
   padding: 0;
 }
 
+.tablist {
+  display: flex;
+  flex-direction: column;
+}
+
 /* || Sitewide */
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5rem;
   border-bottom: 1px solid var(--shtlightsemi);
   background-color: var(--shtdarkless);
 }
 
-nav .navbar-brand {
+nav a {
   color: var(--shtlightless);
 }
 
-nav .navbar-brand:hover {
+nav a:hover {
   color: var(--shtlightsemi);
 }
 
-nav .navbar-nav>li.nav-item>a {
-  text-transform: uppercase;
-  font-size: 0.5rem;
-  letter-spacing: 0.05rem;
-  color: var(--shtlightless);
+nav .tabs {
+  flex-basis: 100%;
 }
 
-@media only screen and (min-width: 992px) {
-  nav .navbar-nav>li.nav-item>a:hover {
-    color: var(--shtlightsemi);
-  }
+nav .tabs a {
+  display: block;
+  padding: 0.5rem 0;
+  background-image: radial-gradient(ellipse 15rem 3rem at 1.5rem 1rem, rgba(255, 40, 40, 0.5), rgba(40, 40, 40, 0) 3rem);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 0.06rem;
 }
 
 header {
