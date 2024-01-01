@@ -112,6 +112,7 @@ summary {
 
 details > p {
   margin: 0;
+  padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 25%;
   border-radius: 0 0 5px 5px;
