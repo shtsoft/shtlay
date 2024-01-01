@@ -4,9 +4,11 @@
   --shtdark: rgba(40, 40, 40, 1);
   --shtdarkless: rgba(40, 40, 40, 0.9);
   --shtdarksemi: rgba(40, 40, 40, 0.5);
+  --shtdarktrans: rgba(40, 40, 40, 0);
   --shtlight: rgba(255, 255, 255, 1);
   --shtlightless: rgba(255, 255, 255, 0.9);
   --shtlightsemi: rgba(255, 255, 255, 0.5);
+  --shthighlight: rgba(255, 40, 40, 0.5);
   --shtanchor: rgba(0, 0, 0, 0.5);
   --shtselect: rgba(32, 128, 176, 1);
   --lineheight: 1.5;
@@ -168,7 +170,7 @@ nav .tabs {
 nav .tabs a {
   display: block;
   padding: 0.5rem 0;
-  background-image: radial-gradient(ellipse 15rem 3rem at 1.5rem 1rem, rgba(255, 40, 40, 0.5), rgba(40, 40, 40, 0) 3rem);
+  background-image: radial-gradient(ellipse 15rem 3rem at 1.5rem 1rem, var(--shthighlight), var(--shtdarktrans) 3rem);
   text-transform: uppercase;
   font-size: 0.6rem;
   letter-spacing: 0.06rem;
