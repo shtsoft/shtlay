@@ -128,15 +128,17 @@ details[open] > summary {
 
 /* || Utility */
 
-.inline {
-  display: inline-block;
-  margin: 0 0.5rem 0.5rem;
-}
-
 .nobullets {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.sitelink {
+  background-image: radial-gradient(ellipse 15rem 3rem at 1.5rem center, var(--shthighlight), var(--shtdarktrans) 3rem);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.075rem;
 }
 
 .tablist {
@@ -161,25 +163,13 @@ nav {
   background-color: var(--shtdarkless);
 }
 
-nav a {
-  color: var(--shtlightless);
-}
-
-nav a:hover {
-  color: var(--shtlightsemi);
-}
-
-nav .tabs {
+nav > ul {
   flex-basis: 100%;
 }
 
-nav .tabs a {
+nav > ul > li > a {
   display: block;
   padding: 0.5rem 0;
-  background-image: radial-gradient(ellipse 15rem 3rem at 1.5rem 1rem, var(--shthighlight), var(--shtdarktrans) 3rem);
-  text-transform: uppercase;
-  font-size: 0.6rem;
-  letter-spacing: 0.06rem;
 }
 
 header {
@@ -189,17 +179,16 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
   font-size: 1.3rem;
   color: white;
 }
 
 header .heading {
   padding: 5rem 0 4rem;
-  text-align: center;
 }
 
 header .subheading {
-  text-align: center;
   color: var(--shtlightsemi);
 }
 
@@ -211,15 +200,16 @@ footer {
   text-align: center;
 }
 
-footer ul {
-  font-size: 0.75rem;
+footer > ul > li {
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem;
 }
 
-footer a {
+nav a, footer a {
   color: var(--shtlightless);
 }
 
-footer a:hover {
+nav a:hover, footer a:hover {
   color: var(--shtlightsemi);
 }
 
