@@ -233,7 +233,7 @@ pre.highlight {
   padding: 0.25rem 0.5rem;
   background-color: var(--shtdark);
   font-size: 0.8rem;
-  color: white;
+  color: var(--shtlightless);
 }
 
 /* || FAQ */
