@@ -198,7 +198,7 @@ footer {
   position: relative;
   margin-top: 2.5rem;
   padding: 0.75rem 1rem;
-  background-image: linear-gradient(var(--shtdark), white); 
+  background-image: linear-gradient(var(--shtdark), var(--shtdarkless) 40%, var(--shtdarksemi) 80%, var(--shtdarktrans)); 
   text-align: center;
 }
 
