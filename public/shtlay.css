@@ -202,6 +202,7 @@ header .heading {
 }
 
 header .subheading {
+  text-shadow: 3px 3px 10px var(--shtlight);
   color: var(--shtlightsemi);
 }
 
