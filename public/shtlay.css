@@ -209,7 +209,7 @@ footer {
   position: relative;
   margin-top: 2.5rem;
   padding: 0.75rem 1rem;
-  background-image: linear-gradient(var(--shtdark), var(--shtdarkless) 40%, var(--shtdarksemi) 80%, var(--shtdarktrans)); 
+  background-image: linear-gradient(var(--shtdark), var(--shtdarkless) 40%, var(--shtdarksemi) 80%, var(--shtdarktrans));
   text-align: center;
 }
 
@@ -239,3 +239,27 @@ pre.highlight {
 /* || FAQ */
 
 /* || Blog Post Index */
+
+article.post-object {
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--shtdark);
+  border-bottom: 4px solid var(--shthighlightwhite);
+  border-radius: 8px;
+}
+
+article.post-object .post-preview {
+  padding: 0 10% 0 1rem;
+}
+
+article.post-object .post-heading {
+  text-shadow: 0px 5px 15px var(--shtdark);
+  letter-spacing: 0.1rem;
+}
+
+article.post-object .post-data {
+  margin-bottom: 0;
+  padding: 0.1rem 25% 0.1rem 1.5rem;
+  background-image: linear-gradient(45deg, var(--shthighlightwhite) 0.2rem, var(--shtdark) 1rem, var(--shtdarkless) 50%, var(--shtdarktrans));
+  font-size: 0.75rem;
+  color: var(--shtlightless);
+}
