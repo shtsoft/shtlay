@@ -61,7 +61,7 @@ table {
 }
 
 thead {
-  background-image: linear-gradient(180deg, var(--shtdark), var(--shtdarksemi));
+  background-image: linear-gradient(180deg, var(--shtdark) 10%, var(--shtdarksemi));
   box-shadow: 0px -2px 1px var(--shthighlightwhite);
   font-size: 1.2rem;
   color: var(--shtlightless);
@@ -105,7 +105,7 @@ summary {
   cursor: pointer;
   padding: 0.75rem 25% 0.75rem 1rem;
   border-radius: 5px;
-  background-image: radial-gradient(var(--shtdarksemi), var(--shtdark));
+  background-image: radial-gradient(var(--shtdarksemi), var(--shtdark) 80%);
   box-shadow: 0px -5px 5px var(--shtdark);
   font-size: 1.2rem;
   font-weight: bolder;
@@ -130,7 +130,7 @@ details > p {
 details[open] > summary {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-image: linear-gradient(var(--shtdark), var(--shtdarksemi));
+  background-image: linear-gradient(var(--shtdark) 10%, var(--shtdarksemi));
   box-shadow: 0px -4px 2px var(--shthighlightwhite);
 }
 
