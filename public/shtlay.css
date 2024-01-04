@@ -85,7 +85,6 @@ a:hover {
 
 ::selection {
   background-color: var(--shtselect);
-  text-shadow: none;
   color: white;
 }
 
