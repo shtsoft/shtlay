@@ -8,8 +8,7 @@
   --shtlight: rgba(255, 255, 255, 1);
   --shtlightless: rgba(255, 255, 255, 0.9);
   --shtlightsemi: rgba(255, 255, 255, 0.5);
-  --shthighlight: rgba(255, 40, 40, 0.5);
-  --shthighlightwhite: rgba(150, 0, 0, 1);
+  --shthighlight: rgba(150, 0, 0, 0.9);
   --shtanchor: rgba(0, 0, 0, 0.5);
   --shtselect: rgba(32, 128, 176, 1);
   --lineheight: 1.5;
@@ -62,7 +61,7 @@ table {
 
 thead {
   background-image: linear-gradient(180deg, var(--shtdark) 10%, var(--shtdarksemi));
-  box-shadow: 0px -2px 1px var(--shthighlightwhite);
+  box-shadow: 0px -2px 1px var(--shthighlight);
   font-size: 1.2rem;
   color: var(--shtlightless);
 }
@@ -129,7 +128,7 @@ details[open] > summary {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   background-image: linear-gradient(var(--shtdark) 10%, var(--shtdarksemi));
-  box-shadow: 0px -4px 2px var(--shthighlightwhite);
+  box-shadow: 0px -4px 2px var(--shthighlight);
 }
 
 details[open] > summary::marker {
@@ -262,7 +261,7 @@ li.faq {
 article.post-object {
   margin: 1.5rem 0;
   border-left: 4px solid var(--shtdark);
-  border-bottom: 4px solid var(--shthighlightwhite);
+  border-bottom: 4px solid var(--shthighlight);
   border-radius: 8px;
 }
 
@@ -278,7 +277,7 @@ article.post-object .post-heading {
 article.post-object .post-data {
   margin-bottom: 0;
   padding: 0.1rem 25% 0.1rem 1.5rem;
-  background-image: linear-gradient(45deg, var(--shthighlightwhite) 0.2rem, var(--shtdark) 1rem, var(--shtdarkless) 50%, var(--shtdarktrans));
+  background-image: linear-gradient(45deg, var(--shthighlight) 0.2rem, var(--shtdark) 1rem, var(--shtdarkless) 50%, var(--shtdarktrans));
   font-size: 0.75rem;
   color: var(--shtlightless);
 }
