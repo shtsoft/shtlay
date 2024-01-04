@@ -96,8 +96,6 @@ img::selection {
 }
 
 details {
-  margin: 10px;
-  padding: 0.1rem 0.5rem;
   color: var(--shtdark);
 }
 
@@ -106,7 +104,7 @@ summary {
   padding: 0.75rem 25% 0.75rem 1rem;
   border-radius: 5px;
   background-image: radial-gradient(var(--shtdarksemi), var(--shtdark) 80%);
-  box-shadow: 0px -5px 5px var(--shtdark);
+  box-shadow: 5px 0px 5px var(--shtdark);
   font-size: 1.2rem;
   font-weight: bolder;
   color: var(--shtlightless);
@@ -238,6 +236,14 @@ pre.highlight {
 }
 
 /* || FAQ */
+
+ul.faq {
+  background-image: linear-gradient(90deg, var(--shtdarktrans), var(--shtdark) 7px, var(--shtdark) 8px, var(--shtdarktrans) 15px);
+}
+
+li.faq {
+  margin: 10px 10px 10px 20px;
+}
 
 /* || Blog Post Index */
 
