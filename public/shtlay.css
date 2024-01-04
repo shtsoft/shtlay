@@ -156,6 +156,11 @@ details[open] > summary::marker {
   flex-direction: column;
 }
 
+div.separator {
+  margin: 2rem 0.5rem;
+  border-bottom: 1px solid var(--shtdark);
+}
+
 /* || Sitewide */
 
 nav {
