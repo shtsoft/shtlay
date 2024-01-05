@@ -167,6 +167,13 @@ div.separator {
 
 /* || Sitewide */
 
+#layout {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 100vh;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;

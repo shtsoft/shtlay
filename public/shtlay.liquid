@@ -35,43 +35,42 @@
 {% endif %}
       </ul>
     </nav>
-  
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-md-10 mx-auto">
-            <div class="heading">
-              <h1>
-                {{ page.heading }}
-              </h1>
-              <span class="subheading">
-                {{ page.subheading }}
-              </span>
+
+    <div id="layout">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+              <div class="heading">
+                <h1>
+                  {{ page.heading }}
+                </h1>
+                <span class="subheading">
+                  {{ page.subheading }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+              {{ content }}
             </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <div id="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-md-10 mx-auto">
-{{ content }}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-separator"></div>
-
-    <footer>
-      <ul class="nobullets">
+      <div class="footer-separator"></div>
+      <footer>
+        <ul class="nobullets">
 {% if page.footeritems %}
   {% render {{ page.footeritems }} %}
 {% endif %}
-      </ul>
-    </footer>
+        </ul>
+      </footer>
+    </div>
 
     <script src="/shtlay.js"></script>
     <script src="/bootstrap.js"></script>
