@@ -137,6 +137,11 @@ details[open] > summary::marker {
 
 /* || Utility */
 
+.fullblock {
+  display: block;
+  width: 100%;
+}
+
 .nobullets {
   list-style: none;
   margin: 0;
