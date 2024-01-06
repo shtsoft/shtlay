@@ -99,7 +99,7 @@ details {
 
 summary {
   cursor: pointer;
-  padding: 0.75rem 25% 0.75rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
   background-image: radial-gradient(var(--shtdarksemi), var(--shtdark) 80%);
   box-shadow: 5px 0px 5px var(--shtdark);
@@ -115,9 +115,7 @@ summary::marker {
 
 details > p {
   margin: 0;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 25%;
+  padding: 0 1rem 0.5rem 1rem;
   border-radius: 0 0 5px 5px;
   background-image: linear-gradient(var(--shtdarksemi), var(--shtdarktrans));
   font-size: 1rem;
