@@ -176,6 +176,12 @@ details[open] > summary::marker {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 992px) {
+  .tablist {
+    flex-direction: row;
+  }
+}
+
 div.separator {
   margin: 2rem 0.5rem;
   border-bottom: 1px solid var(--shtdark);
@@ -249,6 +255,20 @@ nav > ul {
 nav > ul > li > a {
   display: block;
   padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 992px) {
+  nav > button {
+    display: none;
+  }
+
+  nav > ul {
+    flex-basis: auto;
+  }
+
+  nav > ul > li > a {
+    padding-right: 1rem;
+  }
 }
 
 header {
