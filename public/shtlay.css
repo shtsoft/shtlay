@@ -182,6 +182,12 @@ details[open] > summary::marker {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  [collapsed-on-narrow-screens="true"] {
+    display: none;
+  }
+}
+
 div.separator {
   margin: 2rem 0.5rem;
   border-bottom: 1px solid var(--shtdark);
@@ -242,7 +248,7 @@ nav > button {
   background-color: transparent;
 }
 
-nav > button .toggler::before {
+nav > button .hamburger::before {
   content: "\2261";
   font-size: 1.5rem;
   color: var(--shtlightsemi);

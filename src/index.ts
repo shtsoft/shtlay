@@ -1,3 +1,12 @@
-export function sum(x: number, y: number): number {
-  return x + y;
-}
+const menu_toggler: HTMLElement = document.querySelector("nav > button");
+const menu: HTMLElement = document.querySelector("nav > ul");
+
+menu.setAttribute("collapsed-on-narrow-screens", "true");
+
+menu_toggler.onclick = () => {
+  if (menu.getAttribute("collapsed-on-narrow-screens") === "true") {
+    menu.setAttribute("collapsed-on-narrow-screens", "false");
+  } else {
+    menu.setAttribute("collapsed-on-narrow-screens", "true");
+  }
+};
