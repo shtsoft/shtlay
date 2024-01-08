@@ -20,6 +20,24 @@ html {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 24px;
+  }
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -176,6 +194,27 @@ div.separator {
   padding: 0 0.75rem;
 }
 
+@media only screen and (min-width: 576px) {
+  #content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #content {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -260,7 +299,7 @@ pre.highlight {
   overflow: auto;
   padding: 0.25rem 0.5rem;
   background-color: var(--shtdark);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--shtlightless);
 }
 
