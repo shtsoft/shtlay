@@ -30,7 +30,7 @@
       </button>
       <ul class="nobullets tablist" collapsed-on-narrow-screens="false">
 {% if page.navitems %}
-  {% render {{ page.navitems }} %}
+  {% include {{ page.navitems }} %}
 {% endif %}
       </ul>
     </nav>
@@ -65,7 +65,7 @@
       <footer>
         <ul class="nobullets">
 {% if page.footeritems %}
-  {% render {{ page.footeritems }} %}
+  {% include {{ page.footeritems }} %}
 {% endif %}
         </ul>
       </footer>
