@@ -22,9 +22,7 @@
   <body>
 
     <nav>
-      <a href="{{ page.brandlink }}">
-        {{ page.brand }}
-      </a>
+      <a href="{{ page.brandlink }}">{{ page.brand }}</a>
       <button type="button">
         <span class="hamburger"></span>
       </button>
@@ -37,31 +35,17 @@
 
     <div id="layout">
       <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-md-10 mx-auto">
-              <div class="heading">
-                <h1>
-                  {{ page.heading }}
-                </h1>
-                <span class="subheading">
-                  {{ page.subheading }}
-                </span>
-              </div>
-            </div>
-          </div>
+        <div class="heading">
+          <h1>
+            {{ page.heading }}
+          </h1>
+          <span class="subheading">{{ page.subheading }}</span>
         </div>
       </header>
       <div id="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-md-10 mx-auto">
-              {{ content }}
-            </div>
-          </div>
-        </div>
+        {{ content }}
       </div>
-      <div class="footer-separator"></div>
+      <div class="separator"></div>
       <footer>
         <ul class="nobullets">
 {% if page.footeritems %}
