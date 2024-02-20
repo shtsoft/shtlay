@@ -33,23 +33,26 @@ Then generate the (servable) `dist` directory by running the following commands 
 ```console
 user@host:~$ git submodule update --init --recursive
 user@host:~$ npm install
-user@host:~$ npm build
+user@host:~$ npm run build
 ```
+
+Finally, copy the following files to the appropriate places:
+
+- `dist/shtlay.css`
+- `dist/shtlay.js`
+- `dist/shtlay.js.map`
+- `dist/shtlay.liquid`
+- `dist/syntax.css`
 
 ### Usage
 
-To view shtlay in the browser, you can serve the `dist` directory locally on `http://127.0.0.1:8080` with
+To learn how to use shtlay, you have to work through `dist/shtlay.liquid` and `dist/index.html`.
+
+However, for a quick view in the browser, you can serve the `dist` directory locally on `http://127.0.0.1:8080` with
 
 ```console
-user@host:~$ npm serve
+user@host:~$ npm run serve
 ```
-
-To incorporate shtlay into your jekyll website you can copy the following files to the appropriate places:
-
-- [dist/shtlay.css](dist/shtlay.css)
-- [dist/shtlay.js](dist/shtlay.js)
-- [dist/shtlay.liquid](dist/shtlay.liquid)
-- [dist/syntax.css](dist/syntax.css)
 
 ### Screenshots
 
