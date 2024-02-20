@@ -5,16 +5,25 @@
 [license-badge]: https://img.shields.io/badge/license-UNLICENSE-blue.svg
 [license-url]: ./UNLICENSE
 
-A website layout for [jekyll](https://github.com/jekyll/jekyll) made up by
+A **responsive** webpage layout made up by
 
 - a [Liquid template](public/shtlay.liquid)
 - a [CSS](public/shtlay.css)
-- a [TypeScript](src/index.ts)
+- a tiny bit of [TypeScript](src/index.ts)
 
-leveraging
+for **informative** websites which are statically generated with [jekyll](https://github.com/jekyll/jekyll) and have a need for its syntax highlighting feature based on [jekyll-pygments-themes](https://github.com/jwarby/jekyll-pygments-themes).
 
-- ideas from [bootstrap](https://github.com/twbs/bootstrap) for responsive web design.
-- [jekyll-pygments-themes](https://github.com/jwarby/jekyll-pygments-themes) for syntax highlighting.
+- responsiveness
+  * lightweight and modern CSS
+  * media queries for most common devices
+  * [bootstrap](https://github.com/twbs/bootstrap)-like navigation
+- informative components styling
+  * table styling
+  * details/summary styling
+  * FAQ styling (based on details/summary styling)
+  * blog post index styling
+
+If you want to see the project in action, then have a look at the ['Screenshots' section](#screenshots) below or visit the [shtsoft website](https://www.shtsoft.eu).
 
 ### Installation
 
