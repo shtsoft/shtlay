@@ -44,6 +44,34 @@ To incorporate shtlay into your jekyll website you can copy the following files 
 
 ### Screenshots
 
-<-- A SCREENSHOT OF `http://127.0.0.1:8080` AFTER `npm serve` -->
-<-- SCREENSHOTS OF `https://www.shtsoft.eu` -->
-<-- SCREENSHOTS OF `https://blog.shtsoft.eu` -->
+#### Desktop
+
+> <img src="screenshots/desktop.png" alt="shtlay on desktop" />
+
+###### Page Scrolled
+
+> <img src="screenshots/desktop-scrolled.png" alt="shtlay on desktop (page scrolled)" />
+
+###### Footer
+
+> <img src="screenshots/desktop-footer.png" alt="shtlay footer on desktop" />
+
+###### Table
+
+> <img src="screenshots/desktop-table.png" alt="shtlay table on desktop" />
+
+###### FAQ
+
+> <img src="screenshots/desktop-faq.png" alt="shtlay FAQ on desktop" />
+
+###### Blog Post Index
+
+> <img src="screenshots/desktop-bpi.png" alt="shtlay blog post index on desktop" />
+
+#### Mobile
+
+<p float="left" >
+  <img src="screenshots/mobile.png" alt="shtlay on mobile" width="33%" />
+  <img src="screenshots/mobile-opened.png" alt="shtlay on mobile (menu openend)" width="33%" />
+  <img src="screenshots/mobile-scrolled.png" alt="shtlay on mobile (page scrolled)" width="33%" />
+</p>
