@@ -3,10 +3,10 @@ const menu: HTMLElement = document.querySelector("nav > ul");
 
 menu.setAttribute("collapsed-on-narrow-screens", "true");
 
-menu_toggler.onclick = () => {
+menu_toggler.addEventListener("click", () => {
   if (menu.getAttribute("collapsed-on-narrow-screens") === "true") {
     menu.setAttribute("collapsed-on-narrow-screens", "false");
   } else {
     menu.setAttribute("collapsed-on-narrow-screens", "true");
   }
-};
+});
