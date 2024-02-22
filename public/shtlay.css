@@ -74,6 +74,7 @@ dt {
 }
 
 table {
+  width: 100%;
   border: 5px ridge var(--shtdark);
 }
 
