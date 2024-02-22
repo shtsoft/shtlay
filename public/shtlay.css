@@ -202,26 +202,22 @@ div.separator {
   min-height: 100vh;
 }
 
-#content {
-  padding: 0 0.75rem;
-}
-
 @media only screen and (min-width: 576px) {
-  #content {
+  .heading, #content {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  #content {
+  .heading, #content {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  #content {
+  .heading, #content {
     width: 70%;
     margin: 0 auto;
   }
@@ -298,11 +294,37 @@ header {
 }
 
 header .heading {
-  padding: 4rem 0;
+  padding: 4rem 1rem;
+}
+
+header .heading > h1 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 576px) {
+  header .heading > h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .heading > h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header .heading > h1 {
+    font-size: 1.9rem;
+  }
 }
 
 header .subheading {
   color: var(--shtlightsemi);
+}
+
+#content {
+  padding: 0 0.75rem;
 }
 
 footer {
