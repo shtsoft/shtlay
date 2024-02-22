@@ -208,21 +208,21 @@ div.separator {
 
 @media only screen and (min-width: 576px) {
   #content {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #content {
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   #content {
-    max-width: 70%;
+    width: 70%;
     margin: 0 auto;
   }
 }
