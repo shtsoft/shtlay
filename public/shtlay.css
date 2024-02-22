@@ -302,7 +302,6 @@ header .heading {
 }
 
 header .subheading {
-  text-shadow: 3px 3px 10px var(--shtlight);
   color: var(--shtlightsemi);
 }
 
@@ -361,7 +360,6 @@ article.post-object .post-preview {
 }
 
 article.post-object .post-heading {
-  text-shadow: 0px 5px 15px var(--shtdark);
   letter-spacing: 0.1rem;
 }
 
