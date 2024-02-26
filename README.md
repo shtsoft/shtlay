@@ -23,7 +23,7 @@ for **informative** websites which are statically generated with [jekyll](https:
   * FAQ styling (based on details/summary styling)
   * blog post index styling
 
-If you want to see the project in action, then have a look at the ['Screenshots' section](#screenshots) below or visit the [shtsoft website](https://www.shtsoft.eu).
+To get a first impression of shtlay see the ['Screenshots' section](#screenshots).
 
 ### Installation
 
