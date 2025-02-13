@@ -84,6 +84,6 @@ user@host:~$ npm run serve
 
 <p float="left" >
   <img src="screenshots/mobile.png" alt="shtlay on mobile" width="33%" />
-  <img src="screenshots/mobile-opened.png" alt="shtlay on mobile (menu openend)" width="33%" />
+  <img src="screenshots/mobile-opened.png" alt="shtlay on mobile (menu opened)" width="33%" />
   <img src="screenshots/mobile-scrolled.png" alt="shtlay on mobile (page scrolled)" width="33%" />
 </p>
